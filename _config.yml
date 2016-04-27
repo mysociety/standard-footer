@@ -1,0 +1,10 @@
+# Site settings
+title: Standard mySociety footer
+description: >
+  The reference implementation of the standard mySociety footer,
+  for use across all of the sites we operate.
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+host: 0.0.0.0

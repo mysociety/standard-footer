@@ -1,0 +1,65 @@
+header {
+  background: #eee;
+  padding: 1em 0;
+}
+
+.docs-nav {
+  @extend .nav;
+  @extend .nav-pills;
+
+  text-align: center;
+
+  & > li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+$themes: (
+  'light-theme',
+  'dark-theme',
+  'custom-theme'
+);
+
+@each $theme in $themes {
+  body.#{$theme} .docs-nav .#{$theme} > a {
+    // Copy .nav-pills>li.active>a in bootstrap/_navs.scss
+    color: $nav-pills-active-link-hover-color;
+    background-color: $nav-pills-active-link-hover-bg;
+  }
+}
+
+.docs-greek {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  & > .row {
+    margin-left: 0;
+    margin-right: 0;
+
+    & > * {
+      background-color: #ccc;
+      height: 1em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+body.dark-theme {
+  background-color: #1a1a1a;
+
+  .docs-greek > .row > * {
+    background-color: #666;
+  }
+}
+
+body.custom-theme {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+
+  background-color: #62B356;
+
+  .docs-greek > .row > * {
+    background-color: mix(#62B356, #fff, 50%);
+  }
+}

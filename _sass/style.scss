@@ -1,0 +1,98 @@
+@import "settings";
+
+@import "bootstrap";
+
+@import "docs";
+
+
+// The footer itself doesn’t include any grid/column styles.
+// You are expected to use whatever grid system the website currently uses.
+// In this case, we are using bootstrap’s grids to lay out our footer.
+//
+// Generally you will want two rows of three columns, with the column
+// widths running 5/12ths, 4/12ths, 3/12ths from left to right.
+//
+// Your site’s grid system will probably already have a certain breakpoint
+// at which the columns kick in, and everything goes from a simple,
+// vertically stacked layout, into a column layout. If your grid system
+// has this breakpoint, you should pass it to the footer, like so:
+$mysoc-footer-breakpoint-sm: $screen-sm-min;
+
+
+// For demonstration purposes, we’re going to compile the footer styles
+// three times, namespaced by the darkness of the page theme.
+//
+// (You’d normally just do this once, to match the theme of the site
+// you’re working on. But we want to demonstrate a few options.)
+//
+// All of the colour rules in _footer.scss are defined as variables,
+// with fallback default values that suit a light website theme.
+
+
+body.light-theme {
+  // The footer is designed to work on light backgrounds by default,
+  // so we don’t need to override very much for the light theme!
+
+  // Here’s an example of giving the footer a border-top. (It doesn’t
+  // have a border by default, but in this case, we want to add a light
+  // grey border to separate the white body from the white footer.)
+  $mysoc-footer-border-top-color: #F3F1EB;
+
+  // You’ll want to give the donate button a strong background colour
+  // like the primary button colour used on the rest of the site.
+  $mysoc-footer-donate-button-background-color: #62B356;
+
+  @import "footer";
+}
+
+
+body.dark-theme {
+  // Giving the footer a dark theme is going to require us to override
+  // pretty much all of the default colour variables.
+  $mysoc-footer-background-color: #333;
+  $mysoc-footer-text-color: #acacac;
+  $mysoc-footer-site-name-text-color: #fff;
+
+  $mysoc-footer-link-text-color: #fff;
+  $mysoc-footer-link-hover-text-color: #fff;
+
+  $mysoc-footer-divider-color: #4b4b4b;
+
+  $mysoc-footer-donate-background-color: #434343;
+  $mysoc-footer-donate-text-color: #fff;
+  $mysoc-footer-donate-button-background-color: #E04B4B;
+
+  $mysoc-footer-legal-text-color: #9a9a9a;
+
+  $mysoc-footer-image-path: '../img/mysoc-footer-dark/';
+
+  @import "footer";
+}
+
+
+body.custom-theme {
+  // You should use a dark or light theme wherever possible.
+  // But here’s an example of how you could create a coloured theme,
+  // in situations where white or dark grey are too neutral.
+
+  $mysoc-footer-background-color: mix(#333, #62B356, 20%);
+  $mysoc-footer-text-color: mix(#fff, #62B356, 60%);
+  $mysoc-footer-site-name-text-color: #fff;
+
+  $mysoc-footer-link-text-color: #fff;
+  $mysoc-footer-link-hover-text-color: #fff;
+
+  $mysoc-footer-divider-color: mix(#fff, #62B356, 10%);
+
+  $mysoc-footer-donate-background-color: mix(#333, #62B356, 30%);
+  $mysoc-footer-donate-text-color: #fff;
+  $mysoc-footer-donate-button-text-color: darken(#62B356, 20%);
+  $mysoc-footer-donate-button-background-color: #fff;
+  $mysoc-footer-donate-button-hover-background-color: mix(#fff, #62B356, 90%);
+
+  $mysoc-footer-legal-text-color: $mysoc-footer-text-color;
+
+  $mysoc-footer-image-path: '../img/mysoc-footer-dark/';
+
+  @import "footer";
+}
