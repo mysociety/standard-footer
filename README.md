@@ -2,7 +2,9 @@
 
 The reference implementation of the standard mySociety footer, for use across all of the sites we operate.
 
----
+![Screenshot of light theme footer](/screenshot-light.jpg?raw=true)
+
+![Screenshot of dark theme footer](/screenshot-dark.jpg?raw=true)
 
 ## Setup
 
