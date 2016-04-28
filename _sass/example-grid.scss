@@ -1,0 +1,59 @@
+// The standard mySociety footer assumes you will use the grid system
+// from the parent website. But if your website doesn’t have a grid system
+// you could include something like this...
+
+// You will want to change these settings to suit your site
+$grid-max-width: 960px;
+$grid-gutter: 2em;
+$grid-breakpoint-sm: 768px;
+
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.mysoc-footer {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+    max-width: $grid-max-width;
+  }
+
+  .row {
+    @extend %clearfix;
+    margin-left: $grid-gutter / -2;
+    margin-right: $grid-gutter / -2;
+  }
+
+  %col {
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+  }
+
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      @extend %col;
+    }
+  }
+
+  @media(min-width: $grid-breakpoint-sm) {
+    %col-float {
+      float: left;
+    }
+
+    @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+        @extend %col-float;
+        width: 100% / 12 * $i;
+      }
+    }
+  }
+}
