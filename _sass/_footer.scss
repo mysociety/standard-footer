@@ -23,6 +23,9 @@ $mysoc-footer-breakpoint-sm: 768px !default;
 $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi' !default;
 
 .mysoc-footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: $mysoc-footer-background-color;
   color: $mysoc-footer-text-color;
   padding: 2em 0;
@@ -69,13 +72,21 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 
 .mysoc-footer__links {
   @media (min-width: $mysoc-footer-breakpoint-sm){
+    overflow: auto;
     padding-top: 2.25em;
+    margin: 0 -1em;
   }
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $mysoc-footer-breakpoint-sm){
+      float: left;
+      width: 50%;
+      padding: 0 1em;
+    }
   }
 
   li {
@@ -117,7 +128,7 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 }
 
 .mysoc-footer__orgs {
-  @include clearfix();
+  overflow: auto;
   margin: 0 -1em;
 }
 
