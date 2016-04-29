@@ -8,6 +8,10 @@ $mysoc-footer-site-name-text-color: $mysoc-footer-text-color !default;
 $mysoc-footer-link-text-color: #4FADED !default;
 $mysoc-footer-link-hover-text-color: darken($mysoc-footer-link-text-color, 10%) !default;
 
+$mysoc-footer-site-name-font-size: 1.5em !default;
+$mysoc-footer-site-name-margin-bottom: 0.5em !default;
+$mysoc-footer-site-name-line-height: 1em !default;
+
 $mysoc-footer-border-top: none !default;
 $mysoc-footer-divider-color: #E2DFD9 !default;
 
@@ -64,17 +68,21 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
 }
 
 .mysoc-footer__site-name {
-  font-size: 1.5em;
+  font-size: $mysoc-footer-site-name-font-size;
+  line-height: $mysoc-footer-site-name-line-height;
   font-weight: bold;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 $mysoc-footer-site-name-margin-bottom 0;
   color: $mysoc-footer-site-name-text-color;
 }
 
 .mysoc-footer__links {
   @media (min-width: $mysoc-footer-breakpoint-sm){
     overflow: auto;
-    padding-top: 2.25em;
     margin: 0 -1em;
+
+    // Line up top of .mysoc-footer__links with top of .mysoc-footer__site-description
+    $factor: $mysoc-footer-site-name-font-size / 1em;
+    padding-top: ( $mysoc-footer-site-name-line-height*$factor + $mysoc-footer-site-name-margin-bottom*$factor );
   }
 
   ul {
