@@ -1,7 +1,6 @@
+// Some Sass imports specific to the demo site.
 @import "settings";
-
 @import "bootstrap";
-
 @import "docs";
 
 
@@ -13,7 +12,7 @@
 // widths running 5/12ths, 4/12ths, 3/12ths from left to right.
 //
 // If your site doesn’t currently have a grid framework, take a look at
-// example-grid.scss for a minimal example of what’s needed.
+// mysoc-footer-example-grid.scss for a minimal example of what’s needed.
 //
 // Your site’s grid system will probably already have a certain breakpoint
 // at which the columns kick in, and everything goes from a simple,
