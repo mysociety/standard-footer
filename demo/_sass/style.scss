@@ -38,7 +38,7 @@ body.light-theme {
   // Here’s an example of giving the footer a border-top. (It doesn’t
   // have a border by default, but in this case, we want to add a light
   // grey border to separate the white body from the white footer.)
-  $mysoc-footer-border-top-color: #F3F1EB;
+  $mysoc-footer-border-top: 2px solid #F3F1EB;
 
   // You’ll want to give the donate button a strong background colour
   // like the primary button colour used on the rest of the site.

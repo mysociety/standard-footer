@@ -8,7 +8,7 @@ $mysoc-footer-site-name-text-color: $mysoc-footer-text-color !default;
 $mysoc-footer-link-text-color: #4FADED !default;
 $mysoc-footer-link-hover-text-color: darken($mysoc-footer-link-text-color, 10%) !default;
 
-$mysoc-footer-border-top-color: transparent !default;
+$mysoc-footer-border-top: none !default;
 $mysoc-footer-divider-color: #E2DFD9 !default;
 
 $mysoc-footer-donate-background-color: #F3F1EB !default;
@@ -34,10 +34,7 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   padding: 2em 0;
   font-size: 1em;
   line-height: 1.5em;
-
-  @if (opacity($mysoc-footer-border-top-color) > 0){
-    border-top: 2px solid $mysoc-footer-border-top-color;
-  }
+  border-top: $mysoc-footer-border-top;
 
   @media (min-height: 700px) {
     padding: 3em 0;
