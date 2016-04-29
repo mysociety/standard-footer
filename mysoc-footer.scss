@@ -163,16 +163,6 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   background-image: url('#{$mysoc-footer-image-path}logo-mysociety.svg'), none;
 }
 
-.mysoc-footer__org__logo--horse {
-  width: 170px;
-  background: transparent url('#{$mysoc-footer-image-path}logo-horse.png') 0 0 no-repeat;
-  background-size: 170px 32px;
-  @media ($high-dpi-screen) {
-    background-image: url('#{$mysoc-footer-image-path}logo-horse@2x.png');
-  }
-  background-image: url('#{$mysoc-footer-image-path}logo-horse.svg'), none;
-}
-
 .mysoc-footer__legal {
   font-size: 0.8em;
   line-height: 1.5em;

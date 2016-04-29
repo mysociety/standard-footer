@@ -45,6 +45,25 @@ $themes: (
   }
 }
 
+.mysoc-footer__org__logo--horse {
+  width: 170px;
+  background: transparent url('../img/mysoc-footer/logo-horse.png') 0 0 no-repeat;
+  background-size: 170px 32px;
+  @media ($high-dpi-screen) {
+    background-image: url('../img/mysoc-footer/logo-horse@2x.png');
+  }
+  background-image: url('../img/mysoc-footer/logo-horse.svg'), none;
+
+  body.dark-theme &,
+  body.custom-theme & {
+    background-image: url('../img/mysoc-footer-dark/logo-horse.png');
+    @media ($high-dpi-screen) {
+      background-image: url('../img/mysoc-footer-dark/logo-horse@2x.png');
+    }
+    background-image: url('../img/mysoc-footer-dark/logo-horse.svg'), none;
+  }
+}
+
 body.dark-theme {
   background-color: #1a1a1a;
 
