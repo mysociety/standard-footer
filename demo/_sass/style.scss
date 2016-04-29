@@ -45,7 +45,7 @@ body.light-theme {
   // like the primary button colour used on the rest of the site.
   $mysoc-footer-donate-button-background-color: #62B356;
 
-  @import "footer";
+  @import "../../mysoc-footer";
 }
 
 
@@ -69,7 +69,7 @@ body.dark-theme {
 
   $mysoc-footer-image-path: '../img/mysoc-footer-dark/';
 
-  @import "footer";
+  @import "../../mysoc-footer";
 }
 
 
@@ -97,5 +97,5 @@ body.custom-theme {
 
   $mysoc-footer-image-path: '../img/mysoc-footer-dark/';
 
-  @import "footer";
+  @import "../../mysoc-footer";
 }
