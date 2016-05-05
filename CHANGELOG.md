@@ -1,5 +1,9 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.2
+
+* List items inside `.mysoc-footer__links` now have better vertical spacing. Especially useful for clearly differentiating between list items that wrap onto multiple lines.
+
 ## v1.0.1
 
 * `box-sizing: border-box` is now correctly set for the `.mysoc-footer` and all of its children.
