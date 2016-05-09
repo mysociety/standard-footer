@@ -1,5 +1,10 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.3
+
+* Legal text in the example footer HTML no longer includes the registered company numbers, and instead links to mysociety.org where full company details and contact details can be found.
+* Added contribution guidelines to the repo, documenting how and when to issue new versions/releases of the footer.
+
 ## v1.0.2
 
 * List items inside `.mysoc-footer__links` now have better vertical spacing. Especially useful for clearly differentiating between list items that wrap onto multiple lines.
