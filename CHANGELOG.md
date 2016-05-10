@@ -1,5 +1,9 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.4
+
+* Stop empty columns (using the styles in mysoc-footer-example-grid.scss) from vertically collapsing, by giving columns a min-height.
+
 ## v1.0.3
 
 * Legal text in the example footer HTML no longer includes the registered company numbers, and instead links to mysociety.org where full company details and contact details can be found.
