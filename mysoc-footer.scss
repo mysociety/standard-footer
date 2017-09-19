@@ -169,7 +169,9 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   @media ($high-dpi-screen) {
     background-image: url('#{$mysoc-footer-image-path}logo-mysociety@2x.png');
   }
-  background-image: url('#{$mysoc-footer-image-path}logo-mysociety.svg'), none;
+  @media screen {
+    background-image: url('#{$mysoc-footer-image-path}logo-mysociety.svg'), none;
+  }
 }
 
 .mysoc-footer__legal {
@@ -208,7 +210,9 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   @media ($high-dpi-screen) {
     background-image: url('#{$mysoc-footer-image-path}icon-github@2x.png');
   }
-  background-image: url('#{$mysoc-footer-image-path}icon-github.svg'), none;
+  @media screen {
+    background-image: url('#{$mysoc-footer-image-path}icon-github.svg'), none;
+  }
 }
 
 .mysoc-footer__badge--twitter {
@@ -217,7 +221,9 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   @media ($high-dpi-screen) {
     background-image: url('#{$mysoc-footer-image-path}icon-twitter@2x.png');
   }
-  background-image: url('#{$mysoc-footer-image-path}icon-twitter.svg'), none;
+  @media screen {
+    background-image: url('#{$mysoc-footer-image-path}icon-twitter.svg'), none;
+  }
 }
 
 .mysoc-footer__badge--facebook {
@@ -226,5 +232,7 @@ $high-dpi-screen: '-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi
   @media ($high-dpi-screen) {
     background-image: url('#{$mysoc-footer-image-path}icon-facebook@2x.png');
   }
-  background-image: url('#{$mysoc-footer-image-path}icon-facebook.svg'), none;
+  @media screen {
+    background-image: url('#{$mysoc-footer-image-path}icon-facebook.svg'), none;
+  }
 }
