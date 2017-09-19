@@ -1,5 +1,9 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.5
+
+* Fix Sass bug which was causing browsers with SVG image background support to ignore the SVG rules and instead display the @2x PNG backgrounds.
+
 ## v1.0.4
 
 * Stop empty columns (using the styles in mysoc-footer-example-grid.scss) from vertically collapsing, by giving columns a min-height.
