@@ -1,5 +1,9 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.6
+
+* Remove all 2x PNGs as they are not needed.
+
 ## v1.0.5
 
 * Fix Sass bug which was causing browsers with SVG image background support to
