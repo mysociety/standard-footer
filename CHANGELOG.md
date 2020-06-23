@@ -1,5 +1,10 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.7
+
+* Update legal text to use mySociety and SocietyWorks, rather than UKCOD and
+  mySociety Ltd.
+
 ## v1.0.6
 
 * Remove all 2x PNGs as they are not needed.
