@@ -1,4 +1,4 @@
-// Standard mySociety Footer v1.0.6
+// Standard mySociety Footer v1.0.8
 // https://github.com/mysociety/standard-footer
 
 $mysoc-footer-background-color: #fff !default;
@@ -26,6 +26,8 @@ $mysoc-footer-legal-text-color: #6C6B68 !default;
 
 $mysoc-footer-image-path: '../img/mysoc-footer/' !default;
 $mysoc-footer-breakpoint-sm: 768px !default;
+
+$mysoc-footer-horizontal-gutter: 1em !default;
 
 .mysoc-footer {
   -webkit-box-sizing: border-box;
@@ -85,7 +87,7 @@ $mysoc-footer-breakpoint-sm: 768px !default;
 
   @media (min-width: $mysoc-footer-breakpoint-sm){
     overflow: auto;
-    margin: 0 -1em;
+    margin: 0 ($mysoc-footer-horizontal-gutter * -1);
 
     // Line up top of .mysoc-footer__links with top of .mysoc-footer__site-description
     $factor: $mysoc-footer-site-name-font-size / 1em;
@@ -100,7 +102,7 @@ $mysoc-footer-breakpoint-sm: 768px !default;
     @media (min-width: $mysoc-footer-breakpoint-sm){
       float: left;
       width: 50%;
-      padding: 0 1em;
+      padding: 0 $mysoc-footer-horizontal-gutter;
     }
   }
 
@@ -144,12 +146,12 @@ $mysoc-footer-breakpoint-sm: 768px !default;
 
 .mysoc-footer__orgs {
   overflow: auto;
-  margin: 0 -1em;
+  margin: 0 ($mysoc-footer-horizontal-gutter * -1);
 }
 
 .mysoc-footer__org {
   float: left;
-  padding: 0 1em;
+  padding: 0 $mysoc-footer-horizontal-gutter;
 }
 
 .mysoc-footer__org__logo {

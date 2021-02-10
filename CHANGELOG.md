@@ -1,5 +1,13 @@
 # Standard mySociety Footer Changelog
 
+## v1.0.8
+
+* New `$mysoc-footer-horizontal-gutter` variable, to control the horizontal
+  space between list items / organisation logos. Previously hard-coded at 1em,
+  which would cause overflow issues on sites that had less than 1em (16px) of
+  padding either side of their containers on narrow screens (eg: WriteToThem,
+  which has a 15px container padding).
+
 ## v1.0.7
 
 * Update legal text to use mySociety and SocietyWorks, rather than UKCOD and
