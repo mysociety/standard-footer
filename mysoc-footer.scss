@@ -1,4 +1,4 @@
-// Standard mySociety Footer v1.0.6
+// Standard mySociety Footer v1.0.8
 // https://github.com/mysociety/standard-footer
 
 $mysoc-footer-background-color: #fff !default;
@@ -213,4 +213,10 @@ $mysoc-footer-breakpoint-sm: 768px !default;
   background: transparent url('#{$mysoc-footer-image-path}icon-facebook.png') 0 0 no-repeat;
   background-size: 32px 32px;
   background-image: url('#{$mysoc-footer-image-path}icon-facebook.svg'), none;
+}
+
+.mysoc-footer__badge--linkedin {
+  background: transparent url('#{$mysoc-footer-image-path}icon-linkedin.png') 0 0 no-repeat;
+  background-size: 32px 32px;
+  background-image: url('#{$mysoc-footer-image-path}icon-linkedin.svg'), none;
 }
