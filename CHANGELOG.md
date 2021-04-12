@@ -1,4 +1,7 @@
 # Standard mySociety Footer Changelog
+## v1.0.8
+
+* Add SVG and PNG for new LinkedIn list item.
 
 ## v1.0.7
 
