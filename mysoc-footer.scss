@@ -202,10 +202,6 @@ $mysoc-footer-breakpoint-sm: 768px !default;
   background-image: url('#{$mysoc-footer-image-path}icon-github.svg'), none;
 }
 
-.mysoc-footer__badge--twitter {
-  background-image: url('#{$mysoc-footer-image-path}icon-twitter.svg'), none;
-}
-
 .mysoc-footer__badge--facebook {
   background-image: url('#{$mysoc-footer-image-path}icon-facebook.svg'), none;
 }
