@@ -195,28 +195,21 @@ $mysoc-footer-breakpoint-sm: 768px !default;
   padding-top: 32px;
   overflow: hidden;
   border-radius: 100%;
+  background-size: 32px 32px;
 }
 
 .mysoc-footer__badge--github {
-  background: transparent url('#{$mysoc-footer-image-path}icon-github.png') 0 0 no-repeat;
-  background-size: 32px 32px;
   background-image: url('#{$mysoc-footer-image-path}icon-github.svg'), none;
 }
 
 .mysoc-footer__badge--twitter {
-  background: transparent url('#{$mysoc-footer-image-path}icon-twitter.png') 0 0 no-repeat;
-  background-size: 32px 32px;
   background-image: url('#{$mysoc-footer-image-path}icon-twitter.svg'), none;
 }
 
 .mysoc-footer__badge--facebook {
-  background: transparent url('#{$mysoc-footer-image-path}icon-facebook.png') 0 0 no-repeat;
-  background-size: 32px 32px;
   background-image: url('#{$mysoc-footer-image-path}icon-facebook.svg'), none;
 }
 
 .mysoc-footer__badge--linkedin {
-  background: transparent url('#{$mysoc-footer-image-path}icon-linkedin.png') 0 0 no-repeat;
-  background-size: 32px 32px;
   background-image: url('#{$mysoc-footer-image-path}icon-linkedin.svg'), none;
 }
