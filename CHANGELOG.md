@@ -1,4 +1,10 @@
 # Standard mySociety Footer Changelog
+## v1.0.9
+
+* Remove PNG fallbacks.
+* Remove Twitter SVG.
+* Add Bluesky SVG.
+
 ## v1.0.8
 
 * Add SVG and PNG for new LinkedIn list item.
