@@ -196,6 +196,17 @@ $mysoc-footer-breakpoint-sm: 768px !default;
   overflow: hidden;
   border-radius: 100%;
   background-size: 32px 32px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(1.2);
+    outline: 0;
+    box-shadow: 0 0 0 2px #000, 0 0 0 4px #fc0;
+  }
 }
 
 .mysoc-footer__badge--github {
