@@ -1,4 +1,10 @@
 # Standard mySociety Footer Changelog
+## v1.0.10
+
+* Add hover and focus states for `mysoc-footer__badge`
+* Add Instagram and TikTok icons
+* Increases contrast of blue icons
+
 ## v1.0.9
 
 * Remove PNG fallbacks.
