@@ -213,3 +213,11 @@ $mysoc-footer-breakpoint-sm: 768px !default;
 .mysoc-footer__badge--bluesky {
   background-image: url('#{$mysoc-footer-image-path}icon-bluesky.svg'), none;
 }
+
+.mysoc-footer__badge--instagram {
+  background-image: url('#{$mysoc-footer-image-path}icon-instagram.svg'), none;
+}
+
+.mysoc-footer__badge--tiktok {
+  background-image: url('#{$mysoc-footer-image-path}icon-tiktok.svg'), none;
+}
